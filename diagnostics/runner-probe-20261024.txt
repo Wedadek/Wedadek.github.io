@@ -1,0 +1,1 @@
+Public hosted runner capacity diagnostic. No private code, secrets, experiment samples, or inference calls.
