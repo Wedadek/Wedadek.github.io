@@ -1,0 +1,13 @@
+name: Public runner availability diagnostic
+on:
+  push:
+    branches: [diagnostic/public-actions-runner-20261024]
+    paths: [diagnostics/runner-probe-20261024.txt]
+permissions:
+  contents: read
+jobs:
+  check-runner:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - run: echo PUBLIC_RUNNER_OK
